@@ -1,81 +1,79 @@
-<!--DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>User Profile - Nurturing Wellness</title>
-</head>
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">Nurturing Wellness</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="article.html">Articles</a></li>
-                <li><a href="recipe.html">Recipes</a></li>
-                <li><a href="forum.html">Forum</a></li>
-                <li><a href="profile.html">Profile</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="content">
-            <h1>User Profile</h1>
-            <div class="profile">
-                <h2>Welcome, [Username]</h2>
-                <p>Email: [User Email]</p>
-                <p>Joined: [Join Date]</p>
-                <a href="#" class="btn">Edit Profile</a>
-                <a href="#" class="btn">Logout</a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2024 Nurturing Wellness. All Rights Reserved.</p>
-    </footer>
-    <script src="js/scripts.js"></script>
-</body>
-</html>-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Profile - Nurturing Wellness</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
+    <div class="header">
+        <div class="navbar">
             <div class="logo">Nurturing Wellness</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="article.html">Articles</a></li>
                 <li><a href="recipe.html">Recipes</a></li>
-                <li><a href="forum.html">Forum</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="tools.html">Tools</a></li>
                 <li><a href="profile.html">Profile</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="profile">
-            <h2>User Profile</h2>
-            <p>Name: John Doe</p>
-            <p>Email: john.doe@example.com</p>
-            <p>Member since: January 2024</p>
-        </section>
-        <section class="auth-links">
-            <h2>Account Actions</h2>
-            <p><a href="login.html">Login</a> or <a href="register.html">Register</a></p>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2024 Nurturing Wellness. All Rights Reserved.</p>
-    </footer>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Profile</h1>
+
+        <div class="profile-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <div class="user-details">
+            <h2>Your Details</h2>
+            <form id="details-form">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="bed-schedule">Bed Schedule:</label>
+                <input type="time" id="bed-schedule" required>
+                <label for="steps">Steps:</label>
+                <input type="number" id="steps" required>
+                <label for="heart-points">Heart Points:</label>
+                <input type="number" id="heart-points" required>
+                <button type="submit" class="btn">Save Details</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Nurturing Wellness. All rights reserved.</p>
+    </div>
+
     <script src="js/scripts.js"></script>
 </body>
 </html>
