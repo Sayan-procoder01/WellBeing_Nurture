@@ -132,3 +132,5 @@ document.getElementById('details-form').addEventListener('submit', function(even
     // Save details (this should be a request to your backend)
     alert('Details saved successfully!');
 });
+
+
