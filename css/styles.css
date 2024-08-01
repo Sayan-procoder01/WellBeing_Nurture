@@ -11,40 +11,43 @@ a {
     color: inherit;
 }
 
-/* Header */
+/* Header Styles */
 .header {
-    background: #2b5c8c; /* Blue */
-    padding: 20px;
+    background: #2b5c8c;
     color: #fff;
+    padding: 15px 0;
     text-align: center;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
 .logo {
-    font-size: 24px;
+    font-size: 1.8em;
     font-weight: bold;
 }
-
 .nav-links {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: flex;
 }
-
 .nav-links li {
     margin-left: 20px;
 }
-
-.nav-links a {
+.nav-links li a {
     color: #fff;
-    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
+.nav-links li a:hover {
+    color: #1abc9c;
+}
+    
 
 /* Hero Section */
 .hero {
