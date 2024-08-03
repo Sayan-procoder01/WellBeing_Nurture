@@ -5,15 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback - Nurturing Wellness</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #1abc9c;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .feedback-form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .feedback-form input[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-form input[type="submit"]:hover {
+            background-color: #16a085;
+        }
+
+        .feedback-section {
+            margin-bottom: 40px;
+        }
+
+        .contact-details {
+            text-align: center;
+        }
+
+        .contact-details a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Feedback</h1>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">Nurturing Wellness</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vitaltips.html">Well-Being</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="forum.html">Forums</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                
+            </ul>
+        </div>
     </header>
-    <main>
-        <p>We value your feedback. Please use the form below to share your thoughts and suggestions.</p>
-    </main>
-    <footer>
+    <div class="container">
+        <h1>Feedback</h1>
+        <p>Welcome to the Nurturing Wellness feedback page! Your thoughts, suggestions, and experiences are incredibly valuable to us. We are committed to providing the best possible resources and community for health and well-being, and your feedback plays a crucial role in helping us improve and grow.</p>
+
+        <div class="feedback-section">
+            <h2>Your Voice Matters</h2>
+            <p>At Nurturing Wellness, we believe in the power of community and collaboration. Your feedback not only helps us understand your needs and expectations but also guides us in enhancing the user experience, content quality, and overall impact of our platform. Whether you have a suggestion for a new feature, a comment on an article, or simply want to share your thoughts, we’re here to listen.</p>
+        </div>
+
+        <div class="feedback-section">
+            <h2>How to Share Your Feedback</h2>
+            <p>We’ve made it easy for you to share your thoughts with us. You can reach out to us through any of the following methods:</p>
+            <ul>
+                <li><strong>Feedback Form:</strong> Fill out the feedback form below to share your suggestions, comments, or concerns. Your input is anonymous unless you choose to provide your contact information.</li>
+                <li><strong>Email Us:</strong> Prefer to send an email? You can contact us directly at <a href="mailto:feedback@nurturingwellness.com">feedback@nurturingwellness.com</a>.</li>
+                <li><strong>Community Forums:</strong> Join our community forums where you can discuss various topics, ask questions, and share your feedback with other members.</li>
+            </ul>
+        </div>
+
+        <div class="feedback-section">
+            <h2>What Happens Next?</h2>
+            <p>Once you’ve shared your feedback, our team will carefully review it and take the necessary steps to address your suggestions. While we may not be able to implement every idea immediately, rest assured that your input is highly valued and will be considered in our ongoing efforts to enhance the platform.</p>
+        </div>
+
+        <div class="feedback-section">
+            <h2>Thank You for Being a Part of Nurturing Wellness</h2>
+            <p>We are grateful for your continued support and participation in the Nurturing Wellness community. Together, we can make this platform a more enriching and supportive space for everyone on their health and well-being journey. Thank you for helping us create something truly special.</p>
+        </div>
+
+        <div class="feedback-section contact-details">
+            <h2>Call to Action</h2>
+            <p>Please take a moment to share your thoughts using the feedback form below. We value your input and are committed to making Nurturing Wellness the best it can be.</p>
+        </div>
+
+        <div class="feedback-form">
+            <h2>Share Your Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <input type="text" name="name" placeholder="Your Name (Optional)">
+                <input type="email" name="email" placeholder="Your Email (Optional)">
+                <textarea name="message" placeholder="Your Feedback" rows="6" required></textarea>
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
         <p>&copy; 2024 Nurturing Wellness. All Rights Reserved.</p>
     </footer>
 </body>

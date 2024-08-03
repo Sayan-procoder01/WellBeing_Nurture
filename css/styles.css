@@ -43,15 +43,18 @@ a {
     color: #fff;
     font-size: 1.1em;
     transition: color 0.3s ease;
+    font-weight: bold; /*added*/
 }
 .nav-links li a:hover {
     color: #1abc9c;
+    text-decoration: underline; /*added*/
 }
     
 
 /* Hero Section */
 .hero {
     background: url('../images/hero-image.jpg') no-repeat center center/cover;
+    background-size: cover; /*added*/
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -164,6 +167,15 @@ a {
         width: 80%;
         margin-bottom: 20px;
     }
+}
+
+/* Footer Styles */
+.footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
 }
 
 .footer p {

@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Footer Styles */
-        .footer {
-            background: #34495e;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
+        .btn {
+            background-color: #2bb84c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
         }
+        /* Footer Styles */
         .footer-links {
             display: flex;
             justify-content: space-around;
@@ -76,6 +77,51 @@
             margin: 25px auto;
             width: 80%;
         }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        
+
+        .articles, .recipes, .awareness-tips, .health-fitness, .mental-fitness {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .article, .recipe, .tip {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .article:hover, .recipe:hover, .tip:hover {
+            transform: translateY(-10px);
+        }
+
+        
     </style>
 </head>
 <body>
@@ -90,7 +136,7 @@
                 <li><a href="recipe.html">Recipes</a></li>
                 <li><a href="forum.html">Forums</a></li>
                 <li><a href="tools.html">Tools</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <!-- <li><a href="profile.html">Profile</a></li> -->
             </ul>
         </div>
     </header>
@@ -99,95 +145,169 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Welcome to Nurturing Wellness</h1>
-            <p>YOUR JOURNEY TO BETTER HEALTH STARTS HERE</p>
-            <a href="tools.html" class="btn">Explore Tools</a>
+            <p>Your Journey to Optimal Health and Well-Being Begins Here</p>
+            <p>Join our vibrant community and explore a world of holistic health resources designed to help you thrive in body, mind, and spirit.</p>
+            <a href="tools.html" class="btn">Explore Our Tools</a>
         </div>
     </section>
+    
     <main>
-        <!-- Features Section 
-        <section class="features">
-            <div class="feature">
-                <h2>Comprehensive Articles</h2>
-                <p>Discover a wide range of articles on various health topics.</p>
-            </div>
-            <div class="feature">
-                <h2>Healthy Recipes</h2>
-                <p>Find recipes that are both delicious and nutritious.</p>
-            </div>
-            <div class="feature">
-                <h2>Community Forums</h2>
-                <p>Connect with others in our community forums.</p>
-            </div>
-        </section> -->
-
         <!-- Content Section -->
         <section class="content">
-            <h1>Latest Articles</h1>
+            <h1>Latest Insights & Articles</h1>
+            <p>Stay informed with our expert-driven content on health, wellness, and lifestyle. Each article is crafted to empower you with the knowledge to lead a healthier, happier life.</p>
             <div class="articles">
                 <div class="article">
-                    <h2>Article Title 1</h2>
-                    <p>Summary of the article...</p>
+                    <h2>The Power of Mindful Living</h2>
+                    <p>Learn how mindfulness can transform your daily life and enhance your overall well-being.</p>
                 </div>
                 <div class="article">
-                    <h2>Article Title 2</h2>
-                    <p>Summary of the article...</p>
+                    <h2>Top 10 Superfoods for Immune Health</h2>
+                    <p>Discover the best superfoods to boost your immune system naturally.</p>
                 </div>
                 <div class="article">
-                    <h2>Article Title 3</h2>
-                    <p>Summary of the article...</p>
+                    <h2>Understanding Mental Health: Breaking the Stigma</h2>
+                    <p>Explore ways to support mental health and promote awareness in your community.</p>
+                </div>
+                <div class="article">
+                    <h2>The Impact of Air Pollution on Health</h2>
+                    <p>Investigate the latest research on how air pollution affects respiratory and cardiovascular health in India.</p>
+                </div>
+                <div class="article">
+                    <h2>Diabetes Prevention and Management</h2>
+                    <p>Learn about recent advancements in diabetes research and effective strategies to manage this growing health concern in India.</p>
+                </div>
+                <div class="article">
+                    <h2>Tackling Nutritional Deficiencies</h2>
+                    <p>Understand the common nutritional deficiencies in India and discover evidence-based approaches to address them.</p>
                 </div>
             </div>
 
+            
             <h1>Featured Recipes</h1>
+            <p>Indulge in our curated collection of wholesome recipes that nourish your body and delight your taste buds.</p>
             <div class="recipes">
                 <div class="recipe">
-                    <h2>Recipe Title 1</h2>
-                    <p>Summary of the recipe...</p>
+                    <h2>Turmeric Golden Milk</h2>
+                    <p>A soothing and anti-inflammatory drink made with turmeric, milk, and spices.</p>
                 </div>
                 <div class="recipe">
-                    <h2>Recipe Title 2</h2>
-                    <p>Summary of the recipe...</p>
+                    <h2>Kitchari</h2>
+                    <p>A traditional Ayurvedic dish made with mung beans and rice, ideal for detoxification and digestion.</p>
                 </div>
                 <div class="recipe">
-                    <h2>Recipe Title 3</h2>
-                    <p>Summary of the recipe...</p>
+                    <h2>Coconut Chia Pudding</h2>
+                    <p>A delicious and easy-to-make dessert or breakfast that's cooling and nourishing.</p>
+                </div>
+                <div class="recipe">
+                    <h2>Ginger & Lemon Detox Tea</h2>
+                    <p>A revitalizing tea that aids digestion and boosts immunity.</p>
+                </div>
+                <div class="recipe">
+                    <h2>Spiced Vegetable Stew</h2>
+                    <p>A warming and grounding stew made with seasonal vegetables and Ayurvedic spices.</p>
+                </div>
+                <div class="recipe">
+                    <h2>Triphala Smoothie</h2>
+                    <p>A nutrient-dense smoothie featuring the Ayurvedic superfood Triphala, promoting digestive health.</p>
                 </div>
             </div>
 
-            <h1>Community Discussions</h1>
-            <div class="forums">
-                <div class="forum">
-                    <h2>Discussion Topic 1</h2>
-                    <p>Summary of the discussion...</p>
+            <h1>Immune, Anti-aging & Fitness</h1>
+            <p>Explore our comprehensive guides and tips to enhance your health, strengthen your immune system, combat aging, and stay fit.</p>
+            <div class="health-fitness">
+                <div class="article">
+                    <h2>Building a Strong Immune System</h2>
+                    <p>Discover effective ways to boost your immune system through diet, lifestyle changes, and supplements.</p>
                 </div>
-                <div class="forum">
-                    <h2>Discussion Topic 2</h2>
-                    <p>Summary of the discussion...</p>
+                <div class="article">
+                    <h2>Natural Anti-aging Secrets</h2>
+                    <p>Learn about natural remedies and practices that can help slow down the aging process and keep you looking youthful.</p>
                 </div>
-                <div class="forum">
-                    <h2>Discussion Topic 3</h2>
-                    <p>Summary of the discussion...</p>
+                <div class="article">
+                    <h2>Effective Home Workouts</h2>
+                    <p>Find easy-to-follow workout routines you can do at home to stay fit and healthy without the need for a gym.</p>
+                </div>
+                <div class="article">
+                    <h2>Maintaining Heart Health</h2>
+                    <p>Understand the key factors that contribute to heart health and how you can improve cardiovascular fitness.</p>
+                </div>
+                <div class="article">
+                    <h2>Yoga for Wellness</h2>
+                    <p>Explore the benefits of yoga for physical health, mental well-being, and overall fitness.</p>
+                </div>
+                <div class="article">
+                    <h2>Superfoods for Longevity</h2>
+                    <p>Learn about the top superfoods that can promote longevity and enhance your overall health.</p>
                 </div>
             </div>
 
-            <!-- Awareness Tips Section -->
-            <h1>Awareness Tips</h1>
+            <h1>Mental Fitness & Memory Improvement</h1>
+            <p>Enhance your cognitive abilities and mental well-being with Ayurvedic practices and tips designed to boost memory, intelligence, and overall mental fitness.</p>
+            <div class="mental-fitness">
+                <div class="article">
+                    <h2>Brahmi for Brain Health</h2>
+                    <p>Known for its memory-enhancing properties, Brahmi is a powerful herb in Ayurveda that helps improve cognitive function and reduce stress.</p>
+                </div>
+                <div class="article">
+                    <h2>Ashwagandha for Stress Relief</h2>
+                    <p>Ashwagandha is an adaptogen that helps reduce stress, enhance memory, and promote overall mental clarity and focus.</p>
+                </div>
+                <div class="article">
+                    <h2>Shankhpushpi for Cognitive Function</h2>
+                    <p>This Ayurvedic herb is renowned for its ability to enhance cognitive function, improve memory, and boost intelligence.</p>
+                </div>
+                <div class="article">
+                    <h2>Meditation for Mental Clarity</h2>
+                    <p>Incorporating meditation into your daily routine can significantly improve mental clarity, concentration, and overall brain health.</p>
+                </div>
+                <div class="article">
+                    <h2>Healthy Diet for Cognitive Health</h2>
+                    <p>A diet rich in fruits, vegetables, nuts, and whole grains supports brain health and enhances cognitive function. Ayurveda emphasizes the importance of balanced nutrition for mental fitness.</p>
+                </div>
+                <div class="article">
+                    <h2>Regular Sleep for Memory Enhancement</h2>
+                    <p>Adequate and quality sleep is essential for memory consolidation and cognitive function. Ayurveda suggests following a consistent sleep routine for optimal brain health.</p>
+                </div>
+            </div>
+
+            <!-- Wellness Tips & Awareness Section -->
+            <h1>Wellness Tips & Awareness</h1>
+            <p>Empower yourself with our daily tips and awareness guides, designed to support your wellness journey.</p>
             <div class="awareness-tips">
                 <div class="tip">
-                    <h2>Tip Title 1</h2>
-                    <p>Summary of the tip...</p>
+                    <h2>Stay Hydrated</h2>
+                    <p>Drink at least 8 glasses of water a day to keep your body functioning optimally. Staying hydrated is essential for energy levels and overall health.</p>
                 </div>
                 <div class="tip">
-                    <h2>Tip Title 2</h2>
-                    <p>Summary of the tip...</p>
+                    <h2>Prioritize Sleep</h2>
+                    <p>Ensure 7-9 hours of quality sleep to rejuvenate your body and mind. A consistent sleep schedule can improve mood, concentration, and physical health.</p>
                 </div>
                 <div class="tip">
-                    <h2>Tip Title 3</h2>
-                    <p>Summary of the tip...</p>
+                    <h2>Stay Active</h2>
+                    <p>Incorporate physical activity into your daily routine. Whether it's a brisk walk, yoga, or a workout, staying active is crucial for maintaining physical and mental health.</p>
+                </div>
+                <div class="tip">
+                    <h2>Eat Balanced Meals</h2>
+                    <p>Focus on a balanced diet rich in fruits, vegetables, lean proteins, and whole grains. Proper nutrition supports your body’s functions and boosts overall well-being.</p>
+                </div>
+                <div class="tip">
+                    <h2>Mental Health Matters</h2>
+                    <p>Regularly check in on your mental health. Whether it’s through meditation, talking to a friend, or seeking professional help, mental wellness is key to overall health.</p>
+                </div>
+                <div class="tip">
+                    <h2>Limit Screen Time</h2>
+                    <p>Reduce the amount of time spent on screens to prevent eye strain and promote better sleep. Take regular breaks and engage in offline activities.</p>
+                </div>
+                <div class="tip">
+                    <h2>Manage Stress</h2>
+                    <p>Develop healthy coping mechanisms for stress, such as mindfulness, deep breathing exercises, or hobbies you enjoy. Managing stress is essential for maintaining balance and well-being.</p>
                 </div>
             </div>
+
         </section>
     </main>
+
 
     <!-- Footer Section -->
     <footer class="footer">
