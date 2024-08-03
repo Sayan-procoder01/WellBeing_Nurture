@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Nurturing Wellness</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+        /* Footer Styles */
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-links div {
+            margin: 10px;
+            text-align: left;
+        }
+        .footer-links h3 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.5em;
+        }
+        .social-media a:hover {
+            color: #1abc9c;
+        }
+        .legal-section {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .legal-section h3 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+        .legal-section a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .legal-section a:hover {
+            text-decoration: underline;
+        }
+        .footer p {
+            font-size: 1.25em;
+            margin-top: 50px;
+        }
+        .separator {
+            border-top: 2px solid #1abc9c;
+            margin: 25px auto;
+            width: 80%;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 30px;
+            font-size: 2.5em;
+        }
+        .faq-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+        .faq-item {
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .faq-item h2 {
+            font-size: 1.75em;
+            margin-bottom: 10px;
+            color: #1abc9c;
+            cursor: pointer;
+            position: relative;
+        }
+        .faq-item h2:after {
+            content: "\f078"; /* FontAwesome down arrow */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.open h2:after {
+            transform: rotate(180deg);
+        }
+        .faq-item p {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .faq-item.open p {
+            display: block;
+        }
+        .faq-item p a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        .faq-item p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">Nurturing Wellness</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vitaltips.html">Well-Being</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <h2>1. What is Nurturing Wellness and what makes it unique?</h2>
+            <p>Nurturing Wellness is a world-class platform dedicated to promoting holistic health and well-being. Our unique approach integrates cutting-edge tools, expert insights, and a vibrant community to support your journey to optimal health. Unlike other platforms, we focus on comprehensive wellness, covering physical, mental, and emotional health, all in one place.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>2. How can I join the Nurturing Wellness community?</h2>
+            <p>Joining our community is easy! Simply visit our <a href="joinus.html">Join Us</a> page, where you can sign up for free to access our resources, participate in forums, and receive personalized wellness tips.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>3. What kind of tools and resources do you offer?</h2>
+            <p>We offer a wide range of tools and resources, including meal planners, fitness trackers, mental health support, and interactive forums. Explore our <a href="tools.html">Tools</a> page for a comprehensive list of offerings designed to help you achieve your wellness goals.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>4. Can I access Nurturing Wellness on my mobile device?</h2>
+            <p>Yes, Nurturing Wellness is fully optimized for mobile devices, allowing you to access our platform and tools on the go. Whether you’re using a smartphone or tablet, you can enjoy the full experience of our site.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>5. How can I contribute to Nurturing Wellness?</h2>
+            <p>We welcome contributions from our community! You can share your experiences, tips, and insights in our forums, or consider donating to support our mission. Visit our <a href="donate.html">Donate</a> page for more information on how you can make a difference.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>6. Is the information provided on Nurturing Wellness reliable?</h2>
+            <p>Absolutely! All content on Nurturing Wellness is carefully curated and reviewed by health and wellness experts. Our goal is to provide accurate, trustworthy, and up-to-date information to empower you on your wellness journey.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h2>7. Do you offer any personalized wellness programs?</h2>
+            <p>Yes, we offer personalized wellness programs tailored to your specific needs and goals. These programs include customized meal plans, fitness routines, and mental health support. Sign up on our <a href="subscribe.html">Subscribe</a> page to get started with a personalized plan today.</p>
+        </div>
+        <div class="faq-item">
+            <h2>8. What is the cost of using Nurturing Wellness?</h2>
+            <p>Access to our basic resources and community forums is free. We offer premium tools and personalized programs at affordable rates. Check our <a href="subscribe.html">Subscribe</a> page for more details on pricing.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>9. How often is new content added to the platform?</h2>
+            <p>We update our platform with fresh content regularly. New articles, recipes, and wellness tips are added weekly. Stay updated by subscribing to our newsletter or following us on social media.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>10. How can I get in touch with customer support?</h2>
+            <p>You can reach out to us via the <a href="contact.html">Contact Us</a> page. We also provide support through our social media channels. Our team is available to assist you with any questions or concerns.</p>
+        </div>
+        <div class="faq-item">
+            <h2>11. How can I stay updated with the latest from Nurturing Wellness?</h2>
+            <p>You can stay updated by subscribing to our newsletter and following us on our social media platforms. We regularly share new articles, recipes, and wellness tips.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>12. Do you offer any offline resources or events?</h2>
+            <p>Yes, we occasionally host wellness workshops, webinars, and community events. Keep an eye on our announcements section or subscribe to our newsletter for the latest updates.</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="vitaltips.html">Well-Being</a>
+                <a href="article.html">Articles</a>
+                <a href="recipe.html">Recipes</a>
+                <!-- <a href="forum.html">Forums</a> -->
+                <a href="tools.html">Tools</a>
+            </div>
+            <!-- Legal Section -->
+            <div class="legal-section">
+                <h3>Legal Info</h3>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <a href="subscribe.html">Get the latest updates</a>
+                <h3>Join Us</h3>
+                <a href="joinus.html">Become a member</a>
+                <h3>About Us</h3>
+                <a href="about.html">Explore Us</a>
+            </div>
+            
+            <div>
+                <h3>Donate</h3>
+                <a href="donate.html">Change lives</a>
+                <h3>Support</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+            </div>            
+        </div>
+
+        <h3>Follow Us On</h3>   
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.x.com" target="_blank"><img src="images/x-logo.png" alt="X" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div class="separator"></div>
+        <p>&copy; 2024 Nurturing Wellness. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item h2');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentNode;
+                faqItem.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
